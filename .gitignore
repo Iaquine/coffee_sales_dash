@@ -218,3 +218,55 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# =========================
+# Caches e Compilados Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# =========================
+# Dados Locais
+# =========================
+# Ignora tudo dentro da pasta data, mas mantém a estrutura de pastas pelo .gitkeep
+data/*
+!data/**/.gitkeep
+*.csv
+*.parquet
+*.json
+
+# =========================
+# Machine Learning & Modelos
+# =========================
+mlruns/
+*.pkl
+*.model
+*.joblib
+
+# =========================
+# Documentos e Imagens
+# =========================
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.txt
+# Exceção: O arquivo de dependências precisa ser enviado para o repositório
+!requirements.txt
+!README.md
+
+# =========================
+# Ambientes Virtuais & Configurações
+# =========================
+venv/
+env/
+.venv/
+.env
+
+# =========================
+# Arquivos de Sistema (macOS)
+# =========================
+.DS_Store
